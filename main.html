@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NeuroNews AI</title>
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        .gradient-bg {
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+        }
+        .article-card {
+            backdrop-filter: blur(16px) saturate(180%);
+            background-color: rgba(255, 255, 255, 0.05);
+        }
+    </style>
+</head>
+<body class="gradient-bg min-h-screen text-white">
+    <!-- Navigation -->
+    <nav class="bg-black/50 backdrop-blur-lg py-4 fixed w-full">
+        <div class="container mx-auto flex justify-between items-center">
+            <h1 class="text-2xl font-bold text-cyan-400">NeuroNews</h1>
+            <div class="space-x-6">
+                <a href="#" class="hover:text-cyan-400">Home</a>
+                <a href="#" class="hover:text-cyan-400">Tech</a>
+                <a href="#" class="hover:text-cyan-400">Science</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Article Grid -->
+    <div class="container mx-auto pt-24 px-4">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6" id="news-grid">
+            <!-- Articles loaded via JavaScript -->
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
